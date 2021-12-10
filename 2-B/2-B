@@ -24,7 +24,7 @@ const findCoordinates = (course) => {
         else if (direction === 'down') coordinates[2] = coordinates[2] + distance;
         else if (direction === 'forward') {
             coordinates[0] = coordinates[0] + distance;
-            coordinates[1] = coordinates[2] * distance;
+            coordinates[1] = coordinates[1] + coordinates[2] * distance;
         }
     }
     position = coordinates[0];
