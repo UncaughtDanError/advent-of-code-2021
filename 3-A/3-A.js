@@ -1,4 +1,4 @@
-    const fs = require('fs');
+const fs = require('fs');
 const reportData = fs.readFileSync("./3-A/report-data.txt", 'utf-8');
 const reportArray = reportData.split('\n')
 
